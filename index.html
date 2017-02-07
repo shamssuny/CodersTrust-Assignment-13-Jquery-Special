@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 13 jquery special</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- jquery ui cdn css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+
+	<style type="text/css">
+		input[type="text"],[type="password"]{
+			width: 30%;
+			height: 35px;
+			padding: 10px;
+			border-radius: 8px;
+			border-color: white;
+			margin: 2px;
+		}
+		.sec1{
+			text-align: center;
+			/*border:2px solid red;*/
+			background: #eea0f7;
+			margin: 10px;
+			padding: 25px;
+		}
+
+		.sec2{
+			text-align: center;
+			/*border:2px solid coral;*/
+			margin: 10px;
+			background: #45edf9;
+			padding: 25px;
+
+		}
+		.omale{
+			width: 50%;
+			height: 200px;
+			text-align: center;
+			/*background-color: lightgreen;*/
+			margin: 0 auto;
+		}
+		.ofemale{
+			width: 50%;
+			height: 200px;
+			/*background-color: lightblue;*/
+			text-align: center;
+			margin: 0 auto;
+		}
+		#m{
+			background-color: lightgreen;
+
+		}
+
+		#f{
+			background-color: lightblue;
+
+		}
+		.gender{
+			margin: 10px;
+			/*border:2px solid green;*/
+			background: #f2f259;
+			padding: 25px;
+
+		}
+		.choose{
+			margin-top: 20px;
+		}
+		.chuu{
+			width: 40%;
+			height: 220px;
+			text-align: center;
+			background-color: lightcoral;
+			margin: 0 auto;
+
+		}
+
+		.last{
+			overflow: hidden;
+			text-align: center;
+			margin: 10px;
+			background: #59f291;
+			padding: 25px;
+		}
+	</style>
+</head>
+<body>
+
+
+
+
+<div class="main">
+	
+	<div class="container ">
+		
+		<div style="overflow: hidden;" class="all">
+			
+			<div class="row">
+				<div class="sec1 col-md-12">
+					<input type="text" name="" id="mail" placeholder="Email"><br>
+					<b><p id="vm"></p></b>
+					<input type="text" name="" id="fnam" placeholder="First Name"><br><br>
+					<input type="text" name="" id="lnam" placeholder="Last Name"><br><br>
+					<input type="text" name="" id="fullnam" placeholder="Full Name" disabled="disabled">
+				</div>
+			</div>
+
+
+
+			<div class="row">
+				<div class="sec2 col-md-12">
+					<b><p>Choose Password:</p></b>
+					<input type="password" name="" id="pass" placeholder="Input Password"><br>
+					<b><p>Confirm Password: </p></b>
+					<input type="password" name="" id="cpass" placeholder="Confirm Password">
+					<b><p id="pmsg"></p></b>
+				</div>
+			</div>
+
+
+
+			<div class="row">
+				
+				<div class="gender" style="overflow: hidden;">
+					<div class="row">
+					<div class="male col-md-6">
+						<div id="m" class="omale">
+							<span style="font-size: 80px;padding: 40px;" class="glyphicon glyphicon-ok"></span>
+						</div>
+					</div>
+
+
+					<div class="female col-md-6">
+						<div id="f" class="omale">
+							<span style="font-size: 80px;padding: 40px;" class="glyphicon glyphicon-remove"></span>
+						</div>
+					</div>
+					</div>
+
+					<!-- <div class="row"> -->
+					<div class="choose col-md-12">
+						<div class="chuu">
+							<span style="font-size: 80px;padding: 40px;" class="glyphicon glyphicon-hand-down"></span>
+						</div>
+					</div>
+					</div>
+				</div>
+
+
+
+
+			<div class="row">
+				<div style="overflow: hidden;" class="lu">
+				<div class="last col-md-12">
+					<input type="checkbox" name="">
+					<label>*accept terms & conditions.</label><br>
+					<button class="btn btn-danger">Submit</button>
+				</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery library start -->
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- jquery ui CDN -->
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/app.js"></script>
+<!-- jquery library end -->
+</body>
+</html>
